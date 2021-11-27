@@ -152,12 +152,12 @@ with open(filename,"w+",encoding="utf-8") as file:
     numSoldiers(clans)
     while len(clans)>1:
         # generate random number of the clan that is going to attack
-        rClanIndex = random.randint(0, len(clans))
+        rClanIndex = round(random.uniform(0, len(clans)))
         clanKeys = list(clans.keys())
         # print(clanKeys)
         while rClanIndex not in clanKeys:
             # print("rClanIndex ", rClanIndex)
-            rClanIndex = random.randint(0, len(clans))
+            rClanIndex = round(random.uniform(0, len(clans)))
         # print("Attacking clan: " , rClan)
 
         file.write("Attacking clan: {}\n" .format(rClanIndex))
@@ -165,11 +165,12 @@ with open(filename,"w+",encoding="utf-8") as file:
         attackSoldier(clans, rClanIndex)
         
         # We need to know if any clan ran out of soldiers
-        if countSoldiers(clans) == 0:
+        if countSoldiers(clans) == 0 and len(clans)>1:
             # print("Somebody ran out of soldiers")
             numSoldiers(clans)
             CLANS-=1
             battleMatrix = fillMatrix(battleMatrix, CLANS)
+            printMatrix(battleMatrix, CLANS)
             # print(clans)
             # print(battleMatrix)
             i = 0
