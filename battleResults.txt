@@ -1,343 +1,255 @@
   0	  1	  2	
-0 0.00 0.44 0.56 
-1 0.12 0.00 0.88 
-2 0.32 0.68 0.00 
+0 0.00 0.86 0.14 
+1 0.54 0.00 0.46 
+2 0.93 0.07 0.00 
 Clan 0 has 10 soldiers left.
 Clan 1 has 20 soldiers left.
 Clan 2 has 30 soldiers left.
 =================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 10 soldiers left.
-Clan 1 has 19 soldiers left.
+Attacking clan: 1
+Clan 1 attacked clan 0!
+Clan 0 has 9 soldiers left.
+Clan 1 has 20 soldiers left.
 Clan 2 has 30 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 10 soldiers left.
-Clan 1 has 19 soldiers left.
-Clan 2 has 29 soldiers left.
+Clan 1 attacked clan 0!
+Clan 0 has 8 soldiers left.
+Clan 1 has 20 soldiers left.
+Clan 2 has 30 soldiers left.
 =================================
 Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 10 soldiers left.
+Clan 2 attacked clan 0!
+Clan 0 has 7 soldiers left.
+Clan 1 has 20 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 2
+Clan 2 attacked clan 0!
+Clan 0 has 6 soldiers left.
+Clan 1 has 20 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 2
+Clan 2 attacked clan 0!
+Clan 0 has 5 soldiers left.
+Clan 1 has 20 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 0
+Clan 0 attacked clan 1!
+Clan 0 has 5 soldiers left.
+Clan 1 has 19 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 0
+Clan 0 attacked clan 1!
+Clan 0 has 5 soldiers left.
 Clan 1 has 18 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 2
+Clan 2 attacked clan 0!
+Clan 0 has 4 soldiers left.
+Clan 1 has 18 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 1
+Clan 1 attacked clan 0!
+Clan 0 has 3 soldiers left.
+Clan 1 has 18 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 1
+Clan 1 attacked clan 0!
+Clan 0 has 2 soldiers left.
+Clan 1 has 18 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 1
+Clan 1 attacked clan 0!
+Clan 0 has 1 soldiers left.
+Clan 1 has 18 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 1
+Clan 1 attacked clan 0!
+Clan 0 was annihilated
+Clan 1 has 18 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+  1	  2	
+1 0.00 1.00 
+2 1.00 0.00 
+Clan 1 has 18 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 17 soldiers left.
+Clan 2 has 30 soldiers left.
+=================================
+Attacking clan: 1
+Clan 1 has 17 soldiers left.
 Clan 2 has 29 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 10 soldiers left.
-Clan 1 has 18 soldiers left.
+Clan 1 has 17 soldiers left.
 Clan 2 has 28 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 10 soldiers left.
-Clan 1 has 18 soldiers left.
+Clan 1 has 17 soldiers left.
 Clan 2 has 27 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 10 soldiers left.
-Clan 1 has 18 soldiers left.
+Clan 1 has 17 soldiers left.
+Clan 2 has 26 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 16 soldiers left.
+Clan 2 has 26 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 15 soldiers left.
 Clan 2 has 26 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 10 soldiers left.
-Clan 1 has 18 soldiers left.
-Clan 2 has 25 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 10 soldiers left.
-Clan 1 has 17 soldiers left.
-Clan 2 has 25 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 10 soldiers left.
-Clan 1 has 16 soldiers left.
-Clan 2 has 25 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 10 soldiers left.
 Clan 1 has 15 soldiers left.
 Clan 2 has 25 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 10 soldiers left.
 Clan 1 has 15 soldiers left.
 Clan 2 has 24 soldiers left.
 =================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 9 soldiers left.
+Attacking clan: 1
 Clan 1 has 15 soldiers left.
-Clan 2 has 24 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 9 soldiers left.
-Clan 1 has 14 soldiers left.
-Clan 2 has 24 soldiers left.
-=================================
-Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 9 soldiers left.
-Clan 1 has 14 soldiers left.
-Clan 2 has 23 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 8 soldiers left.
-Clan 1 has 14 soldiers left.
-Clan 2 has 23 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 7 soldiers left.
-Clan 1 has 14 soldiers left.
-Clan 2 has 23 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 7 soldiers left.
-Clan 1 has 13 soldiers left.
 Clan 2 has 23 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 7 soldiers left.
-Clan 1 has 13 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 22 soldiers left.
 =================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 6 soldiers left.
-Clan 1 has 13 soldiers left.
-Clan 2 has 22 soldiers left.
-=================================
-Attacking clan: 0
-Clan 0 attacked clan 2!
-Clan 0 has 6 soldiers left.
-Clan 1 has 13 soldiers left.
+Attacking clan: 1
+Clan 1 has 15 soldiers left.
 Clan 2 has 21 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 6 soldiers left.
-Clan 1 has 13 soldiers left.
-Clan 2 has 20 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 20 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 19 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 18 soldiers left.
 =================================
-Attacking clan: 0
-Clan 0 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
+Attacking clan: 1
+Clan 1 has 15 soldiers left.
 Clan 2 has 17 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 16 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 15 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 14 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 13 soldiers left.
-Clan 2 has 13 soldiers left.
-=================================
-Attacking clan: 0
-Clan 0 attacked clan 1!
-Clan 0 has 5 soldiers left.
-Clan 1 has 12 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 13 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 5 soldiers left.
-Clan 1 has 12 soldiers left.
-Clan 2 has 12 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 4 soldiers left.
-Clan 1 has 12 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 12 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 4 soldiers left.
-Clan 1 has 12 soldiers left.
-Clan 2 has 11 soldiers left.
-=================================
-Attacking clan: 0
-Clan 0 attacked clan 1!
-Clan 0 has 4 soldiers left.
-Clan 1 has 11 soldiers left.
+Clan 1 has 15 soldiers left.
 Clan 2 has 11 soldiers left.
 =================================
 Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 3 soldiers left.
-Clan 1 has 11 soldiers left.
-Clan 2 has 11 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 2 soldiers left.
-Clan 1 has 11 soldiers left.
-Clan 2 has 11 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 2 soldiers left.
-Clan 1 has 10 soldiers left.
-Clan 2 has 11 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 2 soldiers left.
-Clan 1 has 9 soldiers left.
-Clan 2 has 11 soldiers left.
-=================================
-Attacking clan: 0
-Clan 0 attacked clan 1!
-Clan 0 has 2 soldiers left.
-Clan 1 has 8 soldiers left.
-Clan 2 has 11 soldiers left.
-=================================
-Attacking clan: 0
-Clan 0 attacked clan 1!
-Clan 0 has 2 soldiers left.
-Clan 1 has 7 soldiers left.
+Clan 1 has 14 soldiers left.
 Clan 2 has 11 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 2 soldiers left.
-Clan 1 has 7 soldiers left.
-Clan 2 has 10 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 has 1 soldiers left.
-Clan 1 has 7 soldiers left.
+Clan 1 has 14 soldiers left.
 Clan 2 has 10 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 1 soldiers left.
-Clan 1 has 7 soldiers left.
+Clan 1 has 14 soldiers left.
 Clan 2 has 9 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 attacked clan 2!
-Clan 0 has 1 soldiers left.
-Clan 1 has 7 soldiers left.
+Clan 1 has 14 soldiers left.
 Clan 2 has 8 soldiers left.
 =================================
 Attacking clan: 2
-Clan 2 attacked clan 1!
-Clan 0 has 1 soldiers left.
-Clan 1 has 6 soldiers left.
-Clan 2 has 8 soldiers left.
-=================================
-Attacking clan: 2
-Clan 2 attacked clan 0!
-Clan 0 was annihilated
-Clan 1 has 6 soldiers left.
-Clan 2 has 8 soldiers left.
-=================================
-  0	  1	
-0 0.00 1.00 
-1 1.00 0.00 
-Clan 1 has 6 soldiers left.
+Clan 1 has 13 soldiers left.
 Clan 2 has 8 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 has 6 soldiers left.
+Clan 1 has 13 soldiers left.
+Clan 2 has 7 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 12 soldiers left.
+Clan 2 has 7 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 11 soldiers left.
+Clan 2 has 7 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 10 soldiers left.
 Clan 2 has 7 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 has 6 soldiers left.
+Clan 1 has 10 soldiers left.
 Clan 2 has 6 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 has 6 soldiers left.
-Clan 2 has 5 soldiers left.
-=================================
-Attacking clan: 2
-Clan 1 has 5 soldiers left.
-Clan 2 has 5 soldiers left.
-=================================
-Attacking clan: 2
-Clan 1 has 4 soldiers left.
-Clan 2 has 5 soldiers left.
-=================================
-Attacking clan: 2
-Clan 1 has 3 soldiers left.
-Clan 2 has 5 soldiers left.
-=================================
-Attacking clan: 2
-Clan 1 has 2 soldiers left.
-Clan 2 has 5 soldiers left.
-=================================
-Attacking clan: 2
-Clan 1 has 1 soldiers left.
+Clan 1 has 10 soldiers left.
 Clan 2 has 5 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 has 1 soldiers left.
+Clan 1 has 10 soldiers left.
+Clan 2 has 4 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 9 soldiers left.
+Clan 2 has 4 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 8 soldiers left.
+Clan 2 has 4 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 7 soldiers left.
 Clan 2 has 4 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 has 1 soldiers left.
+Clan 1 has 7 soldiers left.
 Clan 2 has 3 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 has 1 soldiers left.
+Clan 1 has 7 soldiers left.
+Clan 2 has 2 soldiers left.
+=================================
+Attacking clan: 2
+Clan 1 has 6 soldiers left.
 Clan 2 has 2 soldiers left.
 =================================
 Attacking clan: 1
-Clan 1 has 1 soldiers left.
+Clan 1 has 6 soldiers left.
 Clan 2 has 1 soldiers left.
 =================================
-Attacking clan: 2
-Clan 1 was annihilated
-Clan 2 has 1 soldiers left.
+Attacking clan: 1
+Clan 2 was annihilated
+Clan 1 has 6 soldiers left.
 =================================
-The winner is clan 2!
+The winner is clan 1!

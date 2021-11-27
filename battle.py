@@ -13,13 +13,14 @@ def f(x):
     return x**2
 
 
-def printMatrix(matrix, size):
+def printMatrix(clanKeys, matrix, size):
+    # print(clanKeys)
     for i in range(size):
-        file.write("  {}\t" .format(i))
+        file.write("  {}\t" .format(clanKeys[i]))
     file.write("\n")
     row = 0
     for i in matrix:
-        file.write("{} " .format(row))
+        file.write("{} " .format(clanKeys[row]))
         for j in i:
             file.write(("{:.2f} " .format(j)))
             # file.write("{} " .format(str(float(j))))
@@ -148,7 +149,7 @@ clans = dict({0: [10, battleMatrix[0], getIntervals(battleMatrix[0], 0)], 1: [20
 # initial state of the clans
 
 with open(filename,"w+",encoding="utf-8") as file:
-    printMatrix(battleMatrix, CLANS)
+    printMatrix(list(clans.keys()), battleMatrix, CLANS)
     numSoldiers(clans)
     while len(clans)>1:
         # generate random number of the clan that is going to attack
@@ -170,7 +171,6 @@ with open(filename,"w+",encoding="utf-8") as file:
             numSoldiers(clans)
             CLANS-=1
             battleMatrix = fillMatrix(battleMatrix, CLANS)
-            printMatrix(battleMatrix, CLANS)
             # print(clans)
             # print(battleMatrix)
             i = 0
@@ -179,7 +179,9 @@ with open(filename,"w+",encoding="utf-8") as file:
                 clans.get(clan)[2] = getIntervals(battleMatrix[i], clan)
                 i+=1
             # print(clans)
+            printMatrix(list(clans.keys()), battleMatrix, CLANS)
         # Now we print the current status of the battle
+        
         numSoldiers(clans)
     winner = list(clans.keys())
     file.write("The winner is clan {}!" .format(winner[0]))
