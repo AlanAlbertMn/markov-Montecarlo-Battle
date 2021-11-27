@@ -1,9 +1,11 @@
 import random
+import math
 import numpy as np
 
 a = 0
 b = 1
-N = 1
+N = 10
+CLANS = 3
 filename = 'battleResults.txt'
 
 # function for montecarlo
@@ -19,7 +21,8 @@ def printMatrix(matrix, size):
     for i in matrix:
         file.write("{} " .format(row))
         for j in i:
-            file.write("{} " .format(str(float(j))))
+            file.write(("{:.2f} " .format(j)))
+            # file.write("{} " .format(str(float(j))))
         file.write("\n")
         row+=1
 
@@ -74,37 +77,69 @@ def getIntervals(probListAttacker, attacker):
 
 def countSoldiers(clans):
     for clan, info in clans.items():
-        print(info[0])
+        # print("Clan {} has {} soldiers left." .format(clan, info[0]))
         if info[0] == 0:
-            print("Clan {} was annihilated" .format(clan))
+            # print("Clan {} was annihilated" .format(clan))
+            file.write(("Clan {} was annihilated\n" .format(clan)))
             clans.pop(clan)
             return 0
 
 
 def attackSoldier(dictClans, attacker):
-    probs = dictClans.get(attacker)[2]
-    # print("Probabilities of attacking for clan ", attacker)
-    # print(probs)
-    # file.write("Probabilities of attacking for clan {}\n" .format(attacker))
-    attacked = montecarlo(probs)
-    if attacked == attacker: # this condition is set so if montecarlo generates the same clan as objective for the attackiong clan, it generates a new objective
-        while attacked == attacker:
-            attacked = montecarlo(probs)
-            # print("Attacked clan number: ", attacked)
-            file.write("Attacked clan number: {}\n" .format(attacked))
-    file.write("Clan {} attacked clan {}!\n" .format(attacker, attacked))
-    # print("Clan {} attacked clan {}!" .format(attacker, attacked))
-    dictClans.get(attacked)[0]-=1
+    if len(dictClans) > 2:
+        probs = dictClans.get(attacker)[2]
+        # print("Probabilities of attacking for clan ", attacker)
+        # print(probs)
+        # file.write("Probabilities of attacking for clan {}\n" .format(attacker))
+        attacked = montecarlo(probs)
+        if attacked == attacker: # this condition is set so if montecarlo generates the same clan as objective for the attackiong clan, it generates a new objective
+            while attacked == attacker:
+                attacked = montecarlo(probs)
+                # print("Attacked clan number: ", attacked)
+                # file.write("Attacked clan number: {}\n" .format(attacked))
+        file.write("Clan {} attacked clan {}!\n" .format(attacker, attacked))
+        # print("Clan {} attacked clan {}!" .format(attacker, attacked))
+        dictClans.get(attacked)[0]-=1
+    else: 
+        for clan, info in dictClans.items():
+            if clan != attacker :
+                dictClans.get(clan)[0]-=1
 
+def fillMatrix(battleMatrix, nClans):
+    if nClans != 2:
+        for elem in range(nClans): # for the number of rows in the battle matrix
+            sumOne = 0
+            tmp= list()
+            for elem2 in range(nClans-2):
+                # float("{:.2f}".format(13.949999999999999))
+                rd = float("{:.2f}" .format(random.random()))
+                
+                while sumOne+rd >= 1:
+                    rd = float("{:.2f}" .format(random.random()))
+                    # print("rd en ciclo ", rd)
+                sumOne += rd
+                tmp.append(rd)
+                # print("Suma uno {} iteracion {}" .format(sumOne, elem))
+                diff = 1 - sumOne
+                tmp.append(diff)
+            battleMatrix.append(tmp)
+        # print(battleMatrix)
+        for elem in range(nClans):
+            battleMatrix[elem].insert(elem, 0)
+        # print(battleMatrix)
+        return battleMatrix
+    else:
+        battleMatrix = [[0, 1], [1, 0]]
+        # print(battleMatrix)
+        return battleMatrix
 
 # In battleMatrix we save the probabilities of each clan to attack the others by order
-battleMatrix = [[ 0 , 0.4, 0.6],
-                [0.2,  0 , 0.8],
-                [0.7, 0.3,  0 ]]
+battleMatrix = list(list())
+battleMatrix = fillMatrix(battleMatrix, CLANS)
 
 # in 'clans' is saved the required information of the clans in the following structure: {'number_of_clan': ['amount_of_soldiers', 'probabilities_to_attack', 'intervals_for_montecarlo']}
 clans = dict({0: [10, battleMatrix[0], getIntervals(battleMatrix[0], 0)], 1: [20, battleMatrix[1], getIntervals(battleMatrix[1], 1)], 2: [30, battleMatrix[2], getIntervals(battleMatrix[2], 2)]})
-
+# clans = {0: [10, battleMatrix[0], 0], 1: [20, battleMatrix[1]], 2: [30, battleMatrix[2]]}
 
 ##################################################################################################################
 # Start
@@ -113,21 +148,37 @@ clans = dict({0: [10, battleMatrix[0], getIntervals(battleMatrix[0], 0)], 1: [20
 # initial state of the clans
 
 with open(filename,"w+",encoding="utf-8") as file:
-    printMatrix(battleMatrix, 3)
+    printMatrix(battleMatrix, CLANS)
     numSoldiers(clans)
-    for i in range(25):
+    while len(clans)>1:
         # generate random number of the clan that is going to attack
-        rClan = random.randint(0, len(clans)-1)
+        rClanIndex = random.randint(0, len(clans))
+        clanKeys = list(clans.keys())
+        # print(clanKeys)
+        while rClanIndex not in clanKeys:
+            # print("rClanIndex ", rClanIndex)
+            rClanIndex = random.randint(0, len(clans))
         # print("Attacking clan: " , rClan)
 
-        file.write("Attacking clan: {}\n" .format(rClan))
+        file.write("Attacking clan: {}\n" .format(rClanIndex))
         # then we call the function giving permission to the selected clan to attack other clans
-        attackSoldier(clans, rClan)
+        attackSoldier(clans, rClanIndex)
         
         # We need to know if any clan ran out of soldiers
         if countSoldiers(clans) == 0:
-            print("Somebody ran out of soldiers")
+            # print("Somebody ran out of soldiers")
             numSoldiers(clans)
-            break
+            CLANS-=1
+            battleMatrix = fillMatrix(battleMatrix, CLANS)
+            # print(clans)
+            # print(battleMatrix)
+            i = 0
+            for clan, info in clans.items():
+                clans.get(clan)[1] = battleMatrix[i]
+                clans.get(clan)[2] = getIntervals(battleMatrix[i], clan)
+                i+=1
+            # print(clans)
         # Now we print the current status of the battle
         numSoldiers(clans)
+    winner = list(clans.keys())
+    file.write("The winner is clan {}!" .format(winner[0]))
